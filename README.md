@@ -25,6 +25,38 @@ Or install it yourself as:
 $ gem install wit
 ```
 
+## Usage
+
+At time of writing, the only API method is `message`.
+
+``` ruby
+require 'wit'
+
+wit = Wit::Client.new '<Your API Key>'
+puts wit.message("I need a bud right now")
+```
+
+A JSON Hash will be returned, like so:
+
+``` json
+{
+  "msg_id": "d953bd6c-c620-4dae-a3fc-7634b4330073",
+  "msg_body": "i need a bud right now!",
+  "outcome": {
+    "intent": "grab_me_something",
+    "entities": {
+      "object_to_grab": {
+        "value": "beer",
+        "start": 9,
+        "end": 12,
+        "body": "bud"
+      }
+    },
+    "confidence": 0.6310633902098893
+  }
+}
+```
+
 ## Contributing
 
 1. Fork it
