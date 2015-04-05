@@ -1,3 +1,9 @@
+## NOTICE: Project has been superceded by [Official Wit Ruby SDK](https://github.com/wit-ai/libwit-ruby)
+
+You should be using the new Wit SDK for Ruby referenced above. This repository is left for historical reasons.
+
+---
+
 Wit Ruby Gem
 ============
 
